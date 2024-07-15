@@ -11,4 +11,5 @@ jobs:
       - uses: jsmrcaga/action-netlify-deploy@v2.0.0
         with:
           NETLIFY_AUTH_TOKEN: ${{ secrets.MY_NATLIFY_TOKEY_FOR_GATSBY_PROJECT }}
+          NETLIFY_SIDE_ID: ${{secrets.SIDE.ID}}
           NETLIFY_DEPLOY_TO_PROD: true
